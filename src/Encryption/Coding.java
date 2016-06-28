@@ -71,14 +71,17 @@ public class Coding {
 		frame.getContentPane().add(OutputTextArea);
 
 		JLabel lblEnterMessage = new JLabel("Input text");
+		lblEnterMessage.setFont(new Font("Trebuchet MS", Font.PLAIN, 18));
 		lblEnterMessage.setBounds(31, 66, 111, 16);
 		frame.getContentPane().add(lblEnterMessage);
 
 		JLabel lblEncryptedMessage = new JLabel("Output Text");
+		lblEncryptedMessage.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		lblEncryptedMessage.setBounds(31, 214, 111, 16);
 		frame.getContentPane().add(lblEncryptedMessage);
 
 		JLabel lblEnterPassword = new JLabel("Enter Key");
+		lblEnterPassword.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		lblEnterPassword.setBounds(40, 24, 111, 16);
 		frame.getContentPane().add(lblEnterPassword);
 
@@ -89,6 +92,7 @@ public class Coding {
 		password.setColumns(10);
 		// Encrypt button
 		JButton btnNewButton = new JButton("Encrypt");
+		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) { // Where action is
 															// performed on
@@ -110,6 +114,7 @@ public class Coding {
 		frame.getContentPane().add(btnNewButton);
 		// decrypt button
 		JButton btnDecrypt = new JButton("Decrypt");
+		btnDecrypt.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		btnDecrypt.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
